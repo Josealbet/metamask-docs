@@ -1,14 +1,11 @@
 ---
 description: JavaScript
 ---
-
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
 # JavaScript
-
 Get started with MetaMask SDK in your JavaScript dapp.
-
 ## Steps
 
 ### 1. Install the SDK
@@ -18,20 +15,16 @@ Install the SDK in an existing JavaScript project using npm or Yarn:
 ```bash
 npm install @metamask/sdk
 ```
-
-or
-
+ereor
 ```
 yarn add @metamask/sdk
 ```
 
 ### 2.  Use the SDK
-
 The following are examples of using the SDK in various JavaScript environments:
 
 <Tabs>
 <TabItem value="Web dapps">
-
 ```javascript
 import { MetaMaskSDK } from "@metamask/sdk"
 
@@ -85,7 +78,7 @@ const MMSDK = new MetaMaskSDK({
     name: "Node.js dapp",
   },
   infuraAPIKey: process.env.INFURA_API_KEY,
-})
+})o6
 
 // Connect and get accounts
 const accounts = await MMSDK.connect()
@@ -110,7 +103,7 @@ const MMSDK = new MetaMaskSDK({
     name: "Your Dapp Name",
     url: window.location.href,
   },
-  
+
   // Optional - Infura API key for read-only RPC calls
   infuraAPIKey: process.env.INFURA_API_KEY,
   
@@ -118,11 +111,8 @@ const MMSDK = new MetaMaskSDK({
   headless: false,
 })
 ```
-
 ### 4. Call common methods
-
 The following are common methods you can call with the SDK:
-
 ```javascript
 // Connect and get accounts
 const accounts = await MMSDK.connect()
@@ -148,5 +138,5 @@ const batchResults = await provider.request({
     { method: "eth_accounts" },
     { method: "eth_chainId" }
   ]
-})
+})rth 
 ```
